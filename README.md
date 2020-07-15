@@ -15,6 +15,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+### Stats
+
+![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin)
+
 - 🔭 I’m currently working on:
   - Projects which I co-lead:
     - [ZAP](https://github.com/zaproxy/zaproxy) and its [add-ons](https://github.com/zaproxy/zap-extensions), etc.
