@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-[![HitCount](http://hits.dwyl.com/kingthorin/kingthorin/kingthorin.svg)](http://hits.dwyl.com/kingthorin/kingthorin/kingthorin)
+![HitCount](http://hits.dwyl.com/kingthorin/kingthorin.svg)]
 
 ### Stats
 
