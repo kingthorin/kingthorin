@@ -1,0 +1,21 @@
+name: Create QOTD Image
+
+on:
+  workflow_dispatch:
+    inputs:
+      quote:
+        description: 'Quote?'
+        required: true
+
+jobs:
+  build:
+    name: Create QOTD Image
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+    - name: Setup Action
+      uses: actions/checkout@v2
+    - name: Create Image
+      run: |
+        convert -background white -fill black -pointsize 14 -font FreeMono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
