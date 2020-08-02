@@ -25,3 +25,4 @@ jobs:
         convert -background white -fill black -pointsize 14 -font FreeMono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
         git add qotd.png
         git commit -m "Update QOTD" --signoff
+        git push
