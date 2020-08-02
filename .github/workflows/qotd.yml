@@ -23,4 +23,5 @@ jobs:
         git config --global user.name $GITHUB_USER
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
         convert -background white -fill black -pointsize 14 -font FreeMono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
-        git commit -a -m "Update QUOTD"
+        git add qotd.png
+        git commit -m "Update QUOTD"
