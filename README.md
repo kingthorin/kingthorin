@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 ![HitCount](http://hits.dwyl.com/kingthorin/kingthorin.svg)
 
 ![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin)<br>
-![QOTD](image.png)
+![QOTD](qotd.png)
 
 - 🔭 I’m currently working on:
   - Projects which I co-lead:
