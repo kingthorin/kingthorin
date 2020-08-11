@@ -32,7 +32,7 @@ Here are some ideas to get you started:
 
 ### 🌱 I’m currently learning ...
 - GitHub Actions. I like building things that use a lot of CLI'ish stuff.
-  - I'm looking forward to GitHub sorting out token issues and workflows being able to comment on PRs from forks etc.
+  - I'm really excited that GitHub has added `pull_request_target` in order to facilitate commenting and labeling PRs from forked repos.
 
 ### 📫 How to reach me: ...
 - You can find me on [Twitter](https://twitter.com/kingthorin_rm)
