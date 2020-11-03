@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 ![HitCount](http://hits.dwyl.com/kingthorin/kingthorin.svg)
 
-![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&hide_rank=true)<br>
+![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&hide_rank=true&show_icons=true)<br>
 ![QOTD](https://raw.githubusercontent.com/kingthorin/kingthorin/master/qotd.png)
 
 ### 🔭 I’m currently working on:
