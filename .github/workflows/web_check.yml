@@ -2,7 +2,10 @@ name: Web Check
 
 on:
   schedule:
-  - cron: "*/90 * * * *"
+  # Run every 0th minute for every third hour for hours 0-21
+  - cron: "0 0-21/3 * * *"
+  # Run every 30th minute for every third hour for hours 1-22 
+  - cron: "30 1-22/3 * * *"
   workflow_dispatch:
 
 jobs:
