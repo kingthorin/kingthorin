@@ -17,7 +17,7 @@ jobs:
     - name: Install dependencies
       run: npm install -g pageres-cli
     - name: Take Screenshot
-      run: pageres https://github.com/kingthorin/kingthorin/tree/master/.github/workflows 1024x768 --format=jpg --filename=screenshot.jpg
+      run: pageres https://github.com/kingthorin/kingthorin/tree/master/.github/workflows 1024x768 --format=jpg --filename=screenshot.jpg && echo `ls -lh`
     - name: Attach Screenshot
       uses: actions/upload-artifact@v1
       with:
