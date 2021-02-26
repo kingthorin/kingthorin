@@ -1,0 +1,25 @@
+name: Web Check
+
+on:
+  schedule:
+  - cron: "*/90 * * * *"
+  workflow_dispatch:
+
+jobs:
+  web_check:
+    name: Web Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 13.x
+    - name: Install dependencies
+      run: npm install -g pageres-cli
+    - name: Take Screenshot
+      run: pageres https://github.com/kingthorin/kingthorin/tree/master/.github/workflows 1024x768 --format=jpg --filename=screenshot.jpg
+    - name: Attach Screenshot
+      uses: actions/upload-artifact@v1
+      with:
+        name: screenshot
+        path: screenshot.jpg
