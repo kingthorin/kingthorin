@@ -16,9 +16,10 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: 14.x
+        node-version: 13.x
     - name: Install dependencies
       run: |
+        npm isntall -g p-map
         npm install -g pageres-cli
     - name: Take Screenshot
       run: |
