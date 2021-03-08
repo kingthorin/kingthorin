@@ -18,7 +18,9 @@ jobs:
       with:
         node-version: 13.x
     - name: Install dependencies
-      run: npm install -g pageres-cli
+      run: |
+        npm install p-map
+        npm install -g pageres-cli
     - name: Take Screenshot
       run: |
         wget https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true
