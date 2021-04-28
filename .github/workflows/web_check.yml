@@ -22,9 +22,15 @@ jobs:
     - name: Take Screenshot
       run: |
         wget -O- https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true
+        wget -O stats.svg https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true
         pageres https://github.com/kingthorin/kingthorin/tree/master/.github/workflows 1024x768 --delay=5 --format=jpg --filename=screenshot && echo `ls -lh`
     - name: Attach Screenshot
       uses: actions/upload-artifact@v1
       with:
         name: screenshot
         path: screenshot.jpg
+    - name: Save SVG
+      uses: actions/upload-artifact@v1
+      with:
+        name: svg
+        path: stats.svg
