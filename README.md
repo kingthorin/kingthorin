@@ -14,8 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![HitCount](http://hits.dwyl.com/kingthorin/kingthorin.svg)
-
 ![kingthorin's GitHub Stats](https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true)<br>
 ![QOTD](https://raw.githubusercontent.com/kingthorin/kingthorin/master/qotd.png)
 
