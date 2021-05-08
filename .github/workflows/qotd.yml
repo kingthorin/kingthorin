@@ -20,8 +20,8 @@ jobs:
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
-        fc-list
-        # convert -background white -fill black -pointsize 14 -font "Ubuntu mono regular" label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
-        # git add qotd.png
-        # git commit -m "Update QOTD" --signoff
-        # git push
+        # fc-list
+        convert -background white -fill black -pointsize 14 -font "DejaVu Sans Mono" label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
+        git add qotd.png
+        git commit -m "Update QOTD" --signoff
+        git push
