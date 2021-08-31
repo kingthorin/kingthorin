@@ -30,7 +30,8 @@ Here are some ideas to get you started:
 
 ### 🌱 I’m currently learning ...
 - GitHub Actions. I like building things that use a lot of CLI'ish stuff.
-  - I'm really excited that GitHub has added `pull_request_target` in order to facilitate commenting and labeling PRs from forked repos.
+  - `pull_request_target` has been great in order to facilitate commenting and labeling PRs from forked repos.
+  - now looking into composite actions and hoping GitHub will add something that facilitates yaml based composition. (Ex: Here's my yaml that does commenting, use it in 3 workflows for this repo/org.)
 
 ### 📫 How to reach me: ...
 - You can find me on [Twitter](https://twitter.com/kingthorin_rm)
