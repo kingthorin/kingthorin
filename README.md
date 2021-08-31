@@ -34,4 +34,5 @@ Here are some ideas to get you started:
   - [On the web](https://owasp.org/www-community/).
 
 ### 📫 How to reach me: ...
-- You can find me on [Twitter](https://twitter.com/kingthorin_rm)
+You can find me on: 
+- [Twitter](https://twitter.com/kingthorin_rm)
