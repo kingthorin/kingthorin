@@ -17,12 +17,9 @@ Here are some ideas to get you started:
 ![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true)<br>
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/master/qotd.png)
 
-### 🌱 I’m currently learning ...
-- GitHub Actions. I like building things that use a lot of CLI'ish stuff.
-  - `pull_request_target` has been great in order to facilitate commenting and labeling PRs from forked repos.
-  - now looking into composite actions and hoping GitHub will add something that facilitates yaml based composition. (Ex: Here's my yaml that does commenting, use it in 3 workflows for this repo/org.)
-
 ### 🔭 I’m currently working on:
+- Now and then blogging on zaproxy.org:
+  - https://www.zaproxy.org/authors/thorin/
 - Projects which I co-lead:
   - [ZAP](https://github.com/zaproxy/zaproxy) and its [add-ons](https://github.com/zaproxy/zap-extensions), etc.
     - I'm currently the author/maintainer of the [Neonmarker Add-on](https://github.com/kingthorin/neonmarker).
@@ -32,6 +29,11 @@ Here are some ideas to get you started:
     - [Web deployed version](https://owasp.org/www-project-vulnerable-web-applications-directory/).
 - Reviewing/approving PRs and issues for [OWASP www-community](https://github.com/OWASP/www-community).
   - [On the web](https://owasp.org/www-community/).
+
+### 🌱 I’m currently learning ...
+- GitHub Actions. I like building things that use a lot of CLI'ish stuff.
+  - now looking into composite actions and hoping GitHub will add something that facilitates yaml based composition. (Ex: Here's my yaml that does commenting, use it in 3 workflows for this repo/org.)
+  - `pull_request_target` has been great in order to facilitate commenting and labeling PRs from forked repos.
 
 ### 📫 How to reach me: ...
 You can find me on: 
