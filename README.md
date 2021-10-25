@@ -35,6 +35,6 @@ Here are some ideas to get you started:
   - now looking into composite actions and hoping GitHub will add something that facilitates yaml based composition. (Ex: Here's my yaml that does commenting, use it in 3 workflows for this repo/org.)
   - `pull_request_target` has been great in order to facilitate commenting and labeling PRs from forked repos.
 
-### 📫 How to reach me: ...
+### 📫 How to reach me:
 You can find me on: 
 - [Twitter](https://twitter.com/kingthorin_rm)
