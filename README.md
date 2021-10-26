@@ -14,6 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+[♥️ Sponsor @kingthorin](https://github.com/sponsors/kingthorin)
+
 ![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&cache_seconds=86400)<br>
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/master/qotd.png)
 
