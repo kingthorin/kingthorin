@@ -16,6 +16,9 @@ Here are some ideas to get you started:
 -->
 [♥️ Sponsor @kingthorin](https://github.com/sponsors/kingthorin)
 
+![](https://shields.io/badge/waspy-2021-blue)
+
+
 ![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&cache_seconds=86400)<br>
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/master/qotd.png)
 
