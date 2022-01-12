@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 [![](https://img.shields.io/static/v1?label=Sponsor%20%40kingthorin&message=%E2%9D%A4&logo=GitHub)](https://github.com/sponsors/kingthorin)<br>
-![](https://shields.io/badge/waspy-2021-blue)
+[![](https://shields.io/badge/waspy-2021-blue)](https://owasp.org/awards/)
 
 
 ![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&cache_seconds=86400)<br>
