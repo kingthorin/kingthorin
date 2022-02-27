@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Take Screenshot
       run: |
-        google-chrome --headless --disable-gpu --screenshot=screenshot.jpg --window-size=1280,1600 --run-all-compositor-stages-before-draw --virtual-time-budget=10000 "https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
+        google-chrome --headless --disable-gpu --screenshot=screenshot.jpg --window-size=1280,1600 --run-all-compositor-stages-before-draw --virtual-time-budget=10000 "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&cache_seconds=86400"
         sleep 5
         google-chrome --headless --disable-gpu --screenshot=chrome.jpg --window-size=1280,1600 --run-all-compositor-stages-before-draw --virtual-time-budget=10000 https://github.com/kingthorin
     - name: Attach Screenshot
