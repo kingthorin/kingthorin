@@ -13,20 +13,10 @@ jobs:
     name: Web Check
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: 13.x
-    - name: Install dependencies
-      run: npm install -g pageres-cli
     - name: Take Screenshot
       run: |
-        wget -O- "https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
-        sleep 15
-        curl -s -f "https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
+        google-chrome --headless --disable-gpu --screenshot=screenshot.jpg --window-size=1280,1600 --run-all-compositor-stages-before-draw --virtual-time-budget=10000 "https://github-readme-stats.kingthorin.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         sleep 5
-        curl -s -f "https://github.com/kingthorin/kingthorin/tree/master/.github/workflows"
-        pageres https://github.com/kingthorin/kingthorin/tree/master/.github/workflows 1024x768 --delay=5 --format=jpg --filename=screenshot && echo `ls -lh`
         google-chrome --headless --disable-gpu --screenshot=chrome.jpg --window-size=1280,1600 --run-all-compositor-stages-before-draw --virtual-time-budget=10000 https://github.com/kingthorin
     - name: Attach Screenshot
       uses: actions/upload-artifact@v2
