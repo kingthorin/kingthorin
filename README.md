@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 [![](https://shields.io/badge/waspy-2021-blue)](https://owasp.org/awards/)
 
 
-![kingthorin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&cache_seconds=86400)<br>
+![kingthorin's GitHub Stats](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)<br>
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
 
 ### 🔭 I’m currently working on:
