@@ -1,15 +1,15 @@
 
       <svg
-        width="495"
+        width="467"
         height="195"
-        viewBox="0 0 495 195"
+        viewBox="0 0 467 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
         <title id="titleId">Rick M's GitHub Stats, Rank: S</title>
-        <desc id="descId">Total Stars Earned: 17, Total Commits  : 17, Total PRs: 1897, Total Issues: 442, Contributed to (last year): 59</desc>
+        <desc id="descId">Total Stars Earned: 17, Total Commits  : 17, Total PRs: 1900, Total Issues: 443, Contributed to (last year): 61</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -67,7 +67,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 6.771035487656181;
+        stroke-dashoffset: 6.754839157913322;
       }
     }
   
@@ -104,7 +104,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="494"
+          width="466"
           fill="#fffefe"
           stroke-opacity="1"
         />
@@ -131,7 +131,7 @@
         >
           
     <g data-testid="rank-circle"
-          transform="translate(400, 47.5)">
+          transform="translate(390.5, 47.5)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
         <g class="rank-text">
@@ -205,7 +205,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >442</text>
+      >443</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -220,7 +220,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >59</text>
+      >61</text>
     </g>
   </g>
     </svg>
