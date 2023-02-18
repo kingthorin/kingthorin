@@ -18,7 +18,7 @@ jobs:
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
         curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         ls -lha *.svg
-        cat stats.svg >> $GITHUB_STEP_SUMMARY
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)" >> $GITHUB_STEP_SUMMARY
         git add stats.svg
         git commit -m "Update Stats" --signoff
         git push
