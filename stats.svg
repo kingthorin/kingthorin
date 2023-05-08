@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rick M's GitHub Stats, Rank: S</title>
-        <desc id="descId">Total Stars Earned: 17, Total Commits  : 17, Total PRs: 1976, Total Issues: 454, Contributed to (last year): 65</desc>
+        <desc id="descId">Total Stars Earned: 17, Total Commits  : 17, Total PRs: 1979, Total Issues: 454, Contributed to (last year): 64</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -67,7 +67,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 3.449589693094081;
+        stroke-dashoffset: 3.436975458509471;
       }
     }
   
@@ -216,7 +216,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >65</text>
+      >64</text>
     </g>
   </g>
     </svg>
