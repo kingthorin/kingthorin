@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rick M's GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 19, Total Commits  : 19, Total PRs: 1995, Total Issues: 455, Contributed to (last year): 65</desc>
+        <title id="titleId">Rick M's GitHub Stats, Rank: A-</title>
+        <desc id="descId">Total Stars Earned: 19, Total Commits  : 19, Total PRs: 2009, Total Issues: 456, Contributed to (last year): 63</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -35,6 +35,12 @@
     .rank-text {
       font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #434d58;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
+    }
+    .rank-percentile-header {
+      font-size: 14px;
+    }
+    .rank-percentile-text {
+      font-size: 16px;
     }
     
     .not_bold { font-weight: 400 }
@@ -67,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 86.73680023081224;
+        stroke-dashoffset: 67.147294068483;
       }
     }
   
@@ -137,7 +143,7 @@
         <g class="rank-text">
           
         <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          A
+          A-
         </text>
       
         </g>
@@ -171,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >30.3k</text>
+      >32.4k</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -201,7 +207,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >455</text>
+      >456</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -216,7 +222,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >65</text>
+      >63</text>
     </g>
   </g>
     </svg>
