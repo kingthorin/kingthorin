@@ -25,6 +25,10 @@ Here are some ideas to get you started:
 ### 🔭 I’m currently working on:
 - Now and then blogging on zaproxy.org:
   - https://www.zaproxy.org/authors/thorin/
+- Projects which I contribute to:
+  - [datafaker](https://github.com/datafaker-net/datafaker/) - Java fake data generator.
+  - [htmlunit-csp](https://github.com/HtmlUnit/htmlunit-csp) - A general purpose java library for working with Content Security Policy policies.
+  - [har-reader](https://github.com/sdstoehr/har-reader) - Library for accessing HTTP Archives (HAR) with Java.
 - Projects which I co-lead:
   - [ZAP](https://github.com/zaproxy/zaproxy) and its [add-ons](https://github.com/zaproxy/zap-extensions), etc.
     - I'm currently the author/maintainer of the [Neonmarker Add-on](https://github.com/kingthorin/neonmarker).
