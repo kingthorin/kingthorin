@@ -18,9 +18,11 @@ Here are some ideas to get you started:
 [![](https://img.shields.io/static/v1?label=waspy&message=2021&logo=OWASP&color=blue)](https://owasp.org/awards/)
 [![](https://img.shields.io/static/v1?label=Distinguished+Lifetime+Member&message=2023&logo=OWASP&color=blue)](https://owasp.org/awards/)
 
-
 ![kingthorin's GitHub Stats](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)<br>
-![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
+
+### 🌱 I’m currently learning:
+
+GitHub action workflows with multiple steps, ex: leveraging `workflow_run` or `workflow_call`.
 
 ### 🔭 I’m currently working on:
 - Now and then blogging on zaproxy.org:
@@ -38,6 +40,8 @@ Here are some ideas to get you started:
     - [Web deployed version](https://owasp.org/www-project-vulnerable-web-applications-directory/).
 - Reviewing/approving PRs and issues for [OWASP www-community](https://github.com/OWASP/www-community).
   - [On the web](https://owasp.org/www-community/).
+
+![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
 
 ### 📫 How to reach me:
 You can find me on: 
