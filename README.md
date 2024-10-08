@@ -14,7 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/kingthorin)<br>
 [![](https://img.shields.io/static/v1?label=waspy&message=2021&logo=OWASP&color=blue)](https://owasp.org/awards/)
 [![](https://img.shields.io/static/v1?label=Distinguished+Lifetime+Member&message=2023&logo=OWASP&color=blue)](https://owasp.org/awards/)
 
