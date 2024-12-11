@@ -47,3 +47,6 @@ You can find me on:
 - [Twitter](https://twitter.com/kingthorin_rm)
 - [BlueSky](https://bsky.app/profile/kingthorin.bsky.social)
 - [Mastodon](https://infosec.exchange/@kingthorin_rm)
+
+![](https://api.githubtrends.io/user/svg/kingthorin/repos?theme=dark)
+![](https://api.githubtrends.io/user/svg/kingthorin/langs?theme=dark)
