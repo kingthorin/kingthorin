@@ -1,8 +1,6 @@
 ## kingthorin :zap:
 
 <!--
-**kingthorin/kingthorin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
@@ -48,5 +46,3 @@ You can find me on:
 - [BlueSky](https://bsky.app/profile/kingthorin.bsky.social)
 - [Mastodon](https://infosec.exchange/@kingthorin_rm)
 
-![](https://api.githubtrends.io/user/svg/kingthorin/repos?theme=dark)
-![](https://api.githubtrends.io/user/svg/kingthorin/langs?theme=dark)
