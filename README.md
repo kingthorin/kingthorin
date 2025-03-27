@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 ### 🌱 I’m currently learning:
 
-GitHub action workflows with multiple steps, ex: leveraging `workflow_run` or `workflow_call`.
+GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `workflow_call`.
 
 ### 🔭 I’m currently working on:
 - Now and then blogging on zaproxy.org:
