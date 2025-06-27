@@ -17,6 +17,18 @@ Here are some ideas to get you started:
 
 ![kingthorin's GitHub Stats](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)<br>
 
+<picture>
+  <source
+    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_dark.svg"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_light.svg"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_dark.svg" />
+</picture>
+
 ### 🌱 I’m currently learning:
 
 GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `workflow_call`.

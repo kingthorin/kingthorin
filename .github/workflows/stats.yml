@@ -1,25 +1,30 @@
-name: Update Stats Image
+name: Update Stats Images
 
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    name: Update Stats Image
+    name: Update Stats Images
     runs-on: ubuntu-latest
     steps:
     - name: Setup Action
       uses: actions/checkout@v4
-    - name: Update Image
+    - name: Update Images
       run: |
+        UUID=$(cat /proc/sys/kernel/random/uuid)
         export GITHUB_USER=kingthorin
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
-        # curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
-        curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
+        curl -o stats_light$UUID.svg "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
+        curl -o stats_dark$UUID.svg "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
         ls -lha *.svg
-        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)" >> $GITHUB_STEP_SUMMARY
-        git add stats.svg
-        git commit -m "Update Stats" --signoff
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_light$UUID.svg)" >> $GITHUB_STEP_SUMMARY
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_dark$UUID.svg)" >> $GITHUB_STEP_SUMMARY
+        mv stats_light$UUID.svg stats_light.svg
+        mv stats_dark$UUID.svg stats_dark.svg
+        git add stats_light.svg
+        git add stats_dark.svg
+        git commit -m "Update Stats Images" --signoff
         git push
