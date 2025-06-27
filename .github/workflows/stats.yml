@@ -24,8 +24,8 @@ jobs:
         ls -lha *.svg
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$LIGHT)" >> $GITHUB_STEP_SUMMARY
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK)" >> $GITHUB_STEP_SUMMARY
-        sed -i '/id="light_img"/ s#stats_[^"]*\.svg#${LIGHT}#' README.md
-        sed -i '/id="dark_img"/ s#stats_[^"]*\.svg#${DARK}#' README.md
+        sed -i '/id=\"light_img\"/ s#stats_[^"]*\.svg#${LIGHT}#' README.md
+        sed -i '/id=\"dark_img\"/ s#stats_[^"]*\.svg#${DARK}#' README.md
         git add .
         git commit -m "Update Stats Images" --signoff
         git push
