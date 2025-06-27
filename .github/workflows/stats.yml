@@ -19,11 +19,13 @@ jobs:
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
-        curl -o $LIGHT "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
-        curl -o $DARK "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
+        curl -o ${LIGHT} "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
+        curl -o ${DARK} "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
         ls -lha *.svg
-        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$LIGHT)" >> $GITHUB_STEP_SUMMARY
-        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK)" >> $GITHUB_STEP_SUMMARY
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/${LIGHT})" >> $GITHUB_STEP_SUMMARY
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/${DARK})" >> $GITHUB_STEP_SUMMARY
+        sed -i '/id="light_img"/ s#stats_[^"]*\.svg#${LIGHT}#' README.md
+        sed -i '/id="dark_img"/ s#stats_[^"]*\.svg#${DARK}#' README.md
         git add .
         git commit -m "Update Stats Images" --signoff
         git push
