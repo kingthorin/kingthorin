@@ -15,8 +15,6 @@ Here are some ideas to get you started:
 [![](https://img.shields.io/static/v1?label=Distinguished+Lifetime+Member&message=2023&logo=OWASP&color=blue)](https://owasp.org/awards/)
 [![](https://img.shields.io/static/v1?label=waspy&message=2021&logo=OWASP&color=blue)](https://owasp.org/awards/)
 
-![kingthorin's GitHub Stats](https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg)<br>
-
 <picture>
   <source
     srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_5ead087b-df4a-43aa-b894-bf3130034fb5.svg"
