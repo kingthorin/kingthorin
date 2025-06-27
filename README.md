@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 <picture>
   <source
-    id="dark_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_f0687aad-4ac3-4d00-9b0d-fb67114404e5.svg"
+    id="dark_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK"
     media="(prefers-color-scheme: dark)"
   />
   <source
