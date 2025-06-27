@@ -13,7 +13,7 @@ jobs:
     - name: Update Images
       run: |
         LIGHT=stats_$(cat /proc/sys/kernel/random/uuid).svg
-        DARK=stats-$(cat /proc/sys/kernel/random/uuid).svg
+        DARK=stats_$(cat /proc/sys/kernel/random/uuid).svg
         rm *.svg
         export GITHUB_USER=kingthorin
         git config --global user.email "kingthorin@users.noreply.github.com"
@@ -24,7 +24,6 @@ jobs:
         ls -lha *.svg
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$LIGHT)" >> $GITHUB_STEP_SUMMARY
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK)" >> $GITHUB_STEP_SUMMARY
-        git add $LIGHT
-        git add $DARK
+        git add .
         git commit -m "Update Stats Images" --signoff
         git push
