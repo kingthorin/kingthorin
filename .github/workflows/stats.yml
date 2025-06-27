@@ -12,8 +12,8 @@ jobs:
       uses: actions/checkout@v4
     - name: Update Images
       run: |
-        LIGHT=stats_$(cat /proc/sys/kernel/random/uuid).svg
-        DARK=stats_$(cat /proc/sys/kernel/random/uuid).svg
+        LIGHT=light_$(cat /proc/sys/kernel/random/uuid).svg
+        DARK=dark_$(cat /proc/sys/kernel/random/uuid).svg
         rm *.svg
         export GITHUB_USER=kingthorin
         git config --global user.email "kingthorin@users.noreply.github.com"
@@ -24,8 +24,8 @@ jobs:
         ls -lha *.svg
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$LIGHT)" >> $GITHUB_STEP_SUMMARY
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK)" >> $GITHUB_STEP_SUMMARY
-        sed -i "/id=\"light_img\"/ s#stats_[^\"]*\.svg#${LIGHT}#" README.md
-        sed -i "/id=\"dark_img\"/ s#stats_[^\"]*\.svg#${DARK}#" README.md
+        sed -i "/id=\"light_img\"/ s#light_[^\"]*\.svg#${LIGHT}#" README.md
+        sed -i "/id=\"dark_img\"/ s#dark_[^\"]*\.svg#${DARK}#" README.md
         git add .
         git commit -m "Update Stats Images" --signoff
         git push
