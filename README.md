@@ -19,14 +19,14 @@ Here are some ideas to get you started:
 
 <picture>
   <source
-    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_dark.svg"
+    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_5ead087b-df4a-43aa-b894-bf3130034fb5.svg"
     media="(prefers-color-scheme: dark)"
   />
   <source
-    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_light.svg"
+    srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_569b503e-5673-4242-821d-351f4a7cea12.svg"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
-  <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats_dark.svg" />
+  <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg" />
 </picture>
 
 ### 🌱 I’m currently learning:
