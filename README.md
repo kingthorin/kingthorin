@@ -48,7 +48,6 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
 - Reviewing/approving PRs and issues for [OWASP www-community](https://github.com/OWASP/www-community).
   - [On the web](https://owasp.org/www-community/).
 
-![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
 <picture>
   <source
     id="qotd_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_29cfcd31-02eb-4a49-baa2-dafa402169f8.png"
