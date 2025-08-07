@@ -25,7 +25,8 @@ jobs:
         convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 $QOTD
         ls -lha *.png
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$QOTD)" >> $GITHUB_STEP_SUMMARY
-        sed -i "/id=\"qotd_img\"/ s#qotd_[^\"]*\.png#${QOTD}#" README.md
+        sed -i "/id=\"qotd_dark_img\"/ s#qotd_[^\"]*\.png#${QOTD}#" README.md
+        sed -i "/id=\"qotd_light_img\"/ s#qotd_[^\"]*\.png#${QOTD}#" README.md
         git add $QOTD
         git commit -m "Update QOTD" --signoff
         git push
