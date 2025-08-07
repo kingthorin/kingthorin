@@ -51,7 +51,7 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
 <picture>
   <source
-    id="qotd_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_7cadd125-1f8c-49d1-a1a0-5cd6a89fc5b3.png"
+    id="qotd_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_29cfcd31-02eb-4a49-baa2-dafa402169f8.png"
   />
   <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png" />
 </picture>
