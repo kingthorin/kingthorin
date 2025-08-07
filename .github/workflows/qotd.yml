@@ -17,11 +17,14 @@ jobs:
     - name: Create Image
       run: |
         export GITHUB_USER=kingthorin
+        QOTD=qotd_$(cat /proc/sys/kernel/random/uuid).png
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
         git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
         sudo apt install imagemagick
-        convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 qotd.png
-        git add qotd.png
+        convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono label:${{ github.event.inputs.quote }} -bordercolor white -border 24 $QOTD
+        echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$QOTD)" >> $GITHUB_STEP_SUMMARY
+        sed -i "/id=\"qotd_img\"/ s#qotd_[^\"]*\.png#${QOTD}#" README.md
+        git add $QOTD
         git commit -m "Update QOTD" --signoff
         git push

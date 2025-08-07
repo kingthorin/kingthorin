@@ -49,6 +49,12 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
   - [On the web](https://owasp.org/www-community/).
 
 ![Quote](https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png)
+<picture>
+  <source
+    id="qotd_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_7cadd125-1f8c-49d1-a1a0-5cd6a89fc5b3.png"
+  />
+  <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png" />
+</picture>
 
 ### 📫 How to reach me:
 You can find me on: 
