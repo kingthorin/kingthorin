@@ -27,11 +27,12 @@ Here are some ideas to get you started:
   <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg" />
 </picture>
 
-### 🌱 I’m currently learning:
+### 🌱 I’m currently learning
 
 GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `workflow_call`.
 
-### 🔭 I’m currently working on:
+### 🔭 I’m currently working on
+
 - Now and then blogging on zaproxy.org:
   - https://www.zaproxy.org/authors/thorin/
 - Projects which I contribute to:
@@ -60,7 +61,8 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
   <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png" />
 </picture>
 
-### 📫 How to reach me:
+### 📫 How to reach me
+
 You can find me on: 
 - [Twitter](https://twitter.com/kingthorin_rm)
 - [BlueSky](https://bsky.app/profile/kingthorin.bsky.social)
