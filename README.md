@@ -50,8 +50,12 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
 
 <picture>
   <source
-    id="qotd_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_29cfcd31-02eb-4a49-baa2-dafa402169f8.png"
-    media="(prefers-color-scheme: dark), (prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    id="qotd_dark_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_29cfcd31-02eb-4a49-baa2-dafa402169f8.png"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    id="qotd_light_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd_29cfcd31-02eb-4a49-baa2-dafa402169f8.png"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
   <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/qotd.png" />
 </picture>
