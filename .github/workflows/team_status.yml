@@ -48,11 +48,11 @@ jobs:
         echo "Contributors" >> $file
         echo "<ul>" >> $file
 
-        commits_contributor "zaproxy"
-        commits_contributor "zap-extensions"
-        commits_contributor "zap-core-help"
-        commits_contributor "zaproxy-website"
-        commits_contributor "community-scripts"
+        #commits_contributor "zaproxy"
+        #commits_contributor "zap-extensions"
+        #commits_contributor "zap-core-help"
+        #commits_contributor "zaproxy-website"
+        #commits_contributor "community-scripts"
 
         echo "</ul>" >> $file
 
