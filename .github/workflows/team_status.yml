@@ -46,4 +46,4 @@ jobs:
 
         echo "</ul>" >> $file
 
-        cat $file >>  >> $GITHUB_STEP_SUMMARY
+        cat $file >> $GITHUB_STEP_SUMMARY
