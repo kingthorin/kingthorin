@@ -24,8 +24,6 @@ jobs:
 
         file=index.html
 
-        cd ~/tmp
-
         echo "" > $file
 
         commits_team() {
