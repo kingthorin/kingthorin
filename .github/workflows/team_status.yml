@@ -37,22 +37,12 @@ jobs:
             echo "</ul>" >> $file
         }
 
-        # commits_contributor() {
-        #    gh pr list --search "-author:kingthorin -author:thc202 -author:psiinon -author:zapbot -author:app/dependabot created:$first..$last" --state all --repo zaproxy/$1 --json author,number,title,url -L 100 --jq '.[]|("<li><a href=\"" + .url + "\">#" + (.number|tostring) + "</a> " + .title + " From: " + .author.login)' | tee -a $file
-        # }
-
         commits_team "Simon" "psiinon"
         commits_team "Ricardo" "thc202"
         commits_team "Rick" "kingthorin"
 
         echo "Contributors" >> $file
         echo "<ul>" >> $file
-
-        #commits_contributor "zaproxy"
-        #commits_contributor "zap-extensions"
-        #commits_contributor "zap-core-help"
-        #commits_contributor "zaproxy-website"
-        #commits_contributor "community-scripts"
 
         echo "</ul>" >> $file
 
