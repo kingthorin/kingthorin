@@ -28,7 +28,7 @@ jobs:
 
         file=index.html
 
-        echo "" > $file
+        touch $file
 
         commits_team() {
             echo $1 >> $file
