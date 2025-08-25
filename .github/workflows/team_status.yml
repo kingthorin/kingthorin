@@ -1,4 +1,4 @@
-name: Create QOTD Image
+name: Create Team Status Update
 
 on:
   workflow_dispatch:
@@ -7,12 +7,12 @@ on:
 
 jobs:
   build:
-    name: Create QOTD Image
+    name: Team Status Update
     runs-on: ubuntu-latest
     steps:
     - name: Setup Action
       uses: actions/checkout@v4
-    - name: Create Image
+    - name: Create Update
       run: |
         first=$(date -d "last Tuesday" +%Y-%m-%d)
         last=$(date -d "next Tuesday" +%Y-%m-%d)
