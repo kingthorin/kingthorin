@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: '59 6 * * MON'
     - cron: '59 6 * * TUE'
+    - cron: '20 13 * * TUE'
     - cron: '59 6 * * WED'
 
 jobs:
@@ -59,4 +60,5 @@ jobs:
         echo "</ul>" >> $file
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
