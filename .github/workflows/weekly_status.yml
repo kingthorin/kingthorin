@@ -45,7 +45,7 @@ jobs:
         commits_team "Ricardo" "thc202"
         commits_team "Rick" "kingthorin"
 
-        echo "Contributors" >> $file
+        echo "<h3>Contributors</h3>" >> $file
         echo "<ul>" >> $file
 
         commits_contributor "zaproxy"
@@ -57,6 +57,7 @@ jobs:
         echo "</ul>" >> $file
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
