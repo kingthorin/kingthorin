@@ -31,7 +31,7 @@ jobs:
         echo "" > $file
 
         commits_team() {
-            echo $1 >> $file
+            echo "### $1" >> $file
             echo "<ul>" >> $file
             gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[]|("<li><a href=\"" + .url + "\">#" + (.number|tostring) + "</a> " + .title)' >> $file
             echo "</ul>" >> $file
@@ -57,6 +57,7 @@ jobs:
         echo "</ul>" >> $file
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
