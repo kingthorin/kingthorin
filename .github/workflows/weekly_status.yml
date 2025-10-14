@@ -31,7 +31,7 @@ jobs:
         echo "" > $file
 
         commits_team() {
-            echo "### $1" >> $file
+            echo -e "\n### $1\n" >> $file
             gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title)' >> "$file"           
         }
 
@@ -43,7 +43,7 @@ jobs:
         commits_team "Rick" "kingthorin"
         commits_team "Akshath" "ricekot"
 
-        echo "### Contributors" >> $file
+        echo -e "\n### Contributors\n" >> $file
 
         commits_contributor "zaproxy"
         commits_contributor "zap-extensions"
@@ -51,7 +51,10 @@ jobs:
         commits_contributor "zaproxy-website"
         commits_contributor "community-scripts"
 
+        echo -e "\n" >> $file
+
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
