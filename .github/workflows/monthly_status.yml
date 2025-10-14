@@ -31,11 +31,11 @@ jobs:
 
         commits_team() {
             echo $1 >> $file
-            gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 -jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title)' >> "$file" 
+            gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title)' >> "$file" 
         }
 
         commits_contributor() {
-           gh pr list --search "-author:kingthorin -author:thc202 -author:psiinon -author:zapbot -author:app/dependabot created:$first..$last" --state all --repo zaproxy/$1 --json author,number,title,url -L 100 -jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title + " — From: @" + .author.login)' >> $file
+           gh pr list --search "-author:kingthorin -author:thc202 -author:psiinon -author:zapbot -author:app/dependabot created:$first..$last" --state all --repo zaproxy/$1 --json author,number,title,url -L 100 --jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title + " — From: @" + .author.login)' >> $file
         }
 
         commits_team "Simon" "psiinon"
@@ -51,4 +51,5 @@ jobs:
         commits_contributor "community-scripts"
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
