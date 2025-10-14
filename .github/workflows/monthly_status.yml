@@ -27,7 +27,7 @@ jobs:
 
         file=index.html
 
-        echo "" > $file
+        echo -e "\n" > $file
 
         commits_team() {
             echo -e "### $1\n" >> $file
@@ -42,7 +42,7 @@ jobs:
         commits_team "Ricardo" "thc202"
         commits_team "Rick" "kingthorin"
 
-        echo -e "### Contributors\n" >> $file
+        echo -e "\n### Contributors\n" >> $file
 
         commits_contributor "zaproxy"
         commits_contributor "zap-extensions"
@@ -51,6 +51,7 @@ jobs:
         commits_contributor "community-scripts"
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
