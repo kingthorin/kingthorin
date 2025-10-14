@@ -50,7 +50,10 @@ jobs:
         commits_contributor "zaproxy-website"
         commits_contributor "community-scripts"
 
+        echo -e "\n" >> $file
+       
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
