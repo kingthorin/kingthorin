@@ -27,10 +27,10 @@ jobs:
 
         file=index.html
 
-        echo -e "\n" > $file
+        echo "" > $file
 
         commits_team() {
-            echo -e "### $1\n" >> $file
+            echo -e "\n### $1\n" >> $file
             gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[] | ("- [#" + (.number|tostring) + "](" + .url + ") " + .title)' >> "$file" 
         }
 
@@ -51,6 +51,7 @@ jobs:
         commits_contributor "community-scripts"
 
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
