@@ -31,23 +31,20 @@ jobs:
         echo "" > $file
 
         commits_team() {
-            echo "<h3>$1</h3>" >> $file
-            echo "<ul>" >> $file
-            gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[]|("<li><a href=\"" + .url + "\">#" + (.number|tostring) + "</a> " + .title)' >> $file
-            echo "</ul>" >> $file
+            echo "### $1" >> $file
+            gh search prs --owner zaproxy --owner zapbot --author $2 --created $first..$last --json number,title,url -L 100 --jq '.[]|("- #" + (.number|tostring) + .title"](" + .url + ")")' >> $file           
         }
 
-        commits_contributor() {
-           gh pr list --search "-author:kingthorin -author:thc202 -author:psiinon -author:ricekot -author:zapbot -author:app/dependabot created:$first..$last" --state all --repo zaproxy/$1 --json author,number,title,url -L 100 --jq '.[]|("<li><a href=\"" + .url + "\">#" + (.number|tostring) + "</a> " + .title + " From: " + .author.login)' >> $file
-        }
+#        commits_contributor() {
+#           gh pr list --search "-author:kingthorin -author:thc202 -author:psiinon -author:ricekot -author:zapbot -author:app/dependabot created:$first..$last" --state all --repo zaproxy/$1 --json author,number,title,url -L 100 --jq '.[]|("<li><a href=\"" + .url + "\">#" + (.number|tostring) + "</a> " + .title + " From: " + .author.login)' >> $file
+#        }
 
         commits_team "Simon" "psiinon"
         commits_team "Ricardo" "thc202"
         commits_team "Rick" "kingthorin"
         commits_team "Akshath" "ricekot"
 
-        echo "<h3>Contributors</h3>" >> $file
-        echo "<ul>" >> $file
+        echo "### Contributors" >> $file
 
         commits_contributor "zaproxy"
         commits_contributor "zap-extensions"
@@ -55,9 +52,8 @@ jobs:
         commits_contributor "zaproxy-website"
         commits_contributor "community-scripts"
 
-        echo "</ul>" >> $file
-
         cat $file >> $GITHUB_STEP_SUMMARY
+
 
 
 
