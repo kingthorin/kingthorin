@@ -20,7 +20,8 @@ jobs:
         run: |
           REPO_OWNER="zaproxy"
           REPO_NAME="zaproxy"
-          STARS=$(curl -s "api.github.com{REPO_OWNER}/${REPO_NAME}" | jq -r '.stargazers_count')
+          STARS=$(curl -s "api.github.com${REPO_OWNER}/${REPO_NAME}" | jq -r '.stargazers_count')
+          echo "STARS=${STARS}"
           echo "STARS=${STARS}" >> $GITHUB_OUTPUT
 
       - name: Process, Summarize, and Store Data
