@@ -1,0 +1,64 @@
+name: Track Repository Stars
+
+on:
+  schedule:
+    - cron: '0 0 * * 5' # Friday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  track_stars:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necessary for the checkout action and pushing changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Fetch repository star count
+        id: get_stars
+        run: |
+          REPO_OWNER="zaproxy"
+          REPO_NAME="zaproxy"
+          STARS=$(curl -s "api.github.com{REPO_OWNER}/${REPO_NAME}" | jq -r '.stargazers_count')
+          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+
+      - name: Process, Summarize, and Store Data
+        run: |
+          CURRENT_STARS=${{ steps.get_stars.outputs.STARS }}
+          CURRENT_DATE=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+          DATA_FILE="data/stars_history.csv"
+          SUMMARY_FILE=$GITHUB_STEP_SUMMARY # Shortcut for the workflow run summary
+
+          # Initialize CSV header if file doesn't exist
+          if [ ! -f "$DATA_FILE" ]; then
+            echo "Date/Time,Stargazers" > "$DATA_FILE"
+            echo "## 🌟 Star Tracker Initialized" >> "$SUMMARY_FILE"
+          else
+            # Read previous data
+            PREV_LINE=$(tail -n 1 "$DATA_FILE")
+            PREV_DATE=$(echo "$PREV_LINE" | cut -d',' -f1)
+            PREV_STARS=$(echo "$PREV_LINE" | cut -d',' -f2)
+            DIFF=$((CURRENT_STARS - PREV_STARS))
+
+            # Generate summary output table for the GitHub UI
+            echo "## 📊 Star Count Summary" >> "$SUMMARY_FILE"
+            echo "| Metric | Value |" >> "$SUMMARY_FILE"
+            echo "| :--- | :--- |" >> "$SUMMARY_FILE"
+            echo "| Previous Date/Time | \`${PREV_DATE}\` |" >> "$SUMMARY_FILE"
+            echo "| Previous Stars | \`${PREV_STARS}\` |" >> "$SUMMARY_FILE"
+            echo "| Current Date/Time | \`${CURRENT_DATE}\` |" >> "$SUMMARY_FILE"
+            echo "| Current Stars | \`${CURRENT_STARS}\` |" >> "$SUMMARY_FILE"
+            echo "| Increase/Decrease | \`${DIFF}\` |" >> "$SUMMARY_FILE"
+          fi
+
+          # Append current data point
+          echo "${CURRENT_DATE},${CURRENT_STARS}" >> "$DATA_FILE"
+
+      - name: Commit updated history file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stars_history.csv
+          git commit -m "Automated star count update: ${{ steps.get_stars.outputs.STARS }} stars"
+          git push
