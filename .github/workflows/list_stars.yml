@@ -1,0 +1,30 @@
+name: Track Stars
+
+on:
+  workflow_dispatch:
+
+jobs:
+  track_stars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Fetch repository star count
+        id: get_stars
+        run: |
+          STARS=$(curl -s "https://api.github.com/repos/zaproxy/zaproxy" | jq -r '.stargazers_count')
+          echo "### zaproxy/zaproxy" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}"
+          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+
+          STARS=$(curl -s "https://api.github.com/repos/zaproxy/zap-extenisons" | jq -r '.stargazers_count')
+          echo "### zaproxy/zap-extensions" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}"
+          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+
+          STARS=$(curl -s "https://api.github.com/repos/kingthorin/neonmarker" | jq -r '.stargazers_count')
+          echo "### kingthorin/neonmarker" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}"
+          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
