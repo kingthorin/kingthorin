@@ -15,16 +15,16 @@ jobs:
         id: get_stars
         run: |
           STARS=$(curl -s "https://api.github.com/repos/zaproxy/zaproxy" | jq -r '.stargazers_count')
-          echo "### zaproxy" >> $GITHUB_OUTPUT
+          echo "### zaproxy" >> $GITHUB_STEP_SUMMARY
           echo "STARS=${STARS}"
-          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}" >> $GITHUB_STEP_SUMMARY
 
           STARS=$(curl -s "https://api.github.com/repos/zaproxy/zap-extensions" | jq -r '.stargazers_count')
-          echo "### zap-extensions" >> $GITHUB_OUTPUT
+          echo "### zap-extensions" >> $GITHUB_STEP_SUMMARY
           echo "STARS=${STARS}"
-          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}" >> $GITHUB_STEP_SUMMARY
 
           STARS=$(curl -s "https://api.github.com/repos/kingthorin/neonmarker" | jq -r '.stargazers_count')
-          echo "### neonmarker" >> $GITHUB_OUTPUT
+          echo "### neonmarker" >> $GITHUB_STEP_SUMMARY
           echo "STARS=${STARS}"
-          echo "STARS=${STARS}" >> $GITHUB_OUTPUT
+          echo "STARS=${STARS}" >> $GITHUB_STEP_SUMMARY
