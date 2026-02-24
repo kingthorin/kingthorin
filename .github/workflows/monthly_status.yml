@@ -25,7 +25,7 @@ jobs:
         echo $first
         echo $last
 
-        file=index.html
+        file=index.md
 
         echo "" > $file
 
@@ -52,7 +52,9 @@ jobs:
 
         echo -e "\n" >> $file
        
+        echo '```' >> $GITHUB_STEP_SUMMARY
         cat $file >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
 
 
 
