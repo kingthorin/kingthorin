@@ -13,7 +13,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
     - name: Setup Action
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Create Update
       run: |
         first=$(date -d "last Tuesday" +%Y-%m-%d)
