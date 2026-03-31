@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup Action
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Update Images
       run: |
         LIGHT=light_$(cat /proc/sys/kernel/random/uuid).svg

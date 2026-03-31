@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup Action
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Create Image
       run: |
         export GITHUB_USER=kingthorin
