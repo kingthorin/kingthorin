@@ -17,11 +17,11 @@ Here are some ideas to get you started:
 
 <picture>
   <source
-    id="dark_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/dark_fabb0f19-6f66-4738-878e-04d6030057be.svg"
+    id="dark_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/dark_1d46c55b-de41-455e-aef4-7e676e66d309.svg"
     media="(prefers-color-scheme: dark)"
   />
   <source
-    id="light_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/light_76c4f436-feeb-4ed6-bc82-2a8d4476c2c8.svg"
+    id="light_img" srcset="https://raw.githubusercontent.com/kingthorin/kingthorin/main/light_4c833374-e473-4fe6-9f98-ac6f7f446248.svg"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
   <img src="https://raw.githubusercontent.com/kingthorin/kingthorin/main/stats.svg" />
