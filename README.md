@@ -44,8 +44,8 @@ GitHub action workflows with reusable bits, ex: leveraging `workflow_run` or `wo
     - I'm currently the author/maintainer of the [Neonmarker Add-on](https://github.com/kingthorin/neonmarker).
   - The [OWASP Web Security Testing Guide](https://github.com/OWASP/wstg).
     - [Web deployed version](https://owasp.org/www-project-web-security-testing-guide/).
-  - The [OWASP Vulnerable Web Applications Directory](https://github.com/OWASP/OWASP-VWAD).
-    - [Web deployed version](https://owasp.org/www-project-vulnerable-web-applications-directory/).
+  - The [OWASP Vulnerable Web Applications Directory](https://github.com/owasp-vwad/owasp-vwad.github.io).
+    - [Web deployed version](https://vwad.owasp.org).
 - Reviewing/approving PRs and issues for [OWASP www-community](https://github.com/OWASP/www-community).
   - [On the web](https://owasp.org/www-community/).
 
