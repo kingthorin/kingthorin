@@ -30,7 +30,7 @@ jobs:
         git config --global user.name $GITHUB_USER
         git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         sudo apt install imagemagick
-        convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono label:${GITHUB_EVENT_INPUTS_QUOTE} -bordercolor white -border 24 $QOTD
+        convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono "label:${GITHUB_EVENT_INPUTS_QUOTE}" -bordercolor white -border 24 $QOTD
         ls -lha *.png
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$QOTD)" >> $GITHUB_STEP_SUMMARY
         sed -i "/id=\"qotd_dark_img\"/ s#qotd_[^\"]*\.png#${QOTD}#" README.md
