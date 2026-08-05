@@ -12,7 +12,7 @@ jobs:
     name: Create QOTD Image
     runs-on: ubuntu-latest
     permissions:
-      contents: read # Checkout only; push uses PAT
+      contents: write # Checkout and push QOTD image
     steps:
     - name: Setup Action
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -21,14 +21,14 @@ jobs:
     - name: Create Image
       env:
         GITHUB_EVENT_INPUTS_QUOTE: ${{ github.event.inputs.quote }}
-        KINGTHORIN_QOTD: ${{ secrets.KINGTHORIN_QOTD }}
+        GH_TOKEN: ${{ github.token }}
       run: |
         export GITHUB_USER=kingthorin
         QOTD=qotd_$(cat /proc/sys/kernel/random/uuid).png
         rm *.png
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
-        git remote set-url origin https://$GITHUB_USER:${KINGTHORIN_QOTD}@github.com/$GITHUB_USER/$GITHUB_USER
+        git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         sudo apt install imagemagick
         convert -background white -fill black -pointsize 14 -font DejaVu-Sans-Mono label:${GITHUB_EVENT_INPUTS_QUOTE} -bordercolor white -border 24 $QOTD
         ls -lha *.png
