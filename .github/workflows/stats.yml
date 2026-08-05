@@ -9,10 +9,16 @@ jobs:
   build:
     name: Update Stats Images
     runs-on: ubuntu-latest
+    permissions:
+      contents: read # Checkout only; push uses PAT
     steps:
     - name: Setup Action
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
     - name: Update Images
+      env:
+        KINGTHORIN_QOTD: ${{ secrets.KINGTHORIN_QOTD }}
       run: |
         LIGHT=light_$(cat /proc/sys/kernel/random/uuid).svg
         DARK=dark_$(cat /proc/sys/kernel/random/uuid).svg
@@ -20,7 +26,7 @@ jobs:
         export GITHUB_USER=kingthorin
         git config --global user.email "kingthorin@users.noreply.github.com"
         git config --global user.name $GITHUB_USER
-        git remote set-url origin https://$GITHUB_USER:${{ secrets.KINGTHORIN_QOTD }}@github.com/$GITHUB_USER/$GITHUB_USER
+        git remote set-url origin https://$GITHUB_USER:${KINGTHORIN_QOTD}@github.com/$GITHUB_USER/$GITHUB_USER
         # curl -o $LIGHT "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         curl -o $LIGHT "https://github-readme-stats-kt.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         # curl -o $DARK "https://github-readme-stats.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
