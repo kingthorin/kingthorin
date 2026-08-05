@@ -30,7 +30,7 @@ jobs:
         # curl -o $LIGHT "https://github-readme-stats-kt.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         curl -o $LIGHT "https://github-stats-extended.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true"
         # curl -o $DARK "https://github-readme-stats-kt.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
-        curl -o $DARK "hhttps://github-stats-extended.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
+        curl -o $DARK "https://github-stats-extended.vercel.app/api?username=kingthorin&show_icons=true&include_all_commits=true&theme=dark"
         ls -lha *.svg
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$LIGHT)" >> $GITHUB_STEP_SUMMARY
         echo "![](https://raw.githubusercontent.com/kingthorin/kingthorin/main/$DARK)" >> $GITHUB_STEP_SUMMARY
